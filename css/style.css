@@ -23,7 +23,7 @@ body {
 .card-icon{
     color: blue;
 }
-.title, .card-text, card-icon, .footer-text{
+.title, .card-text, .card-icon, .footer-text{
     margin: 10px 0;
 }
 .btn{
