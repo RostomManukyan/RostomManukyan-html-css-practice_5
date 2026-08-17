@@ -20,10 +20,10 @@ body {
     color: gray;
 }
 
-i{
+.card-icon{
     color: blue;
 }
-.title, .card-text, i, .footer-text{
+.title, .card-text, card-icon, .footer-text{
     margin: 10px 0;
 }
 .btn{
@@ -44,11 +44,23 @@ i{
     justify-content: space-around;
     align-items: center;
 }
-.cards > div{
+.card{
     width: 30%;
     height: auto;
     background-color: white;
     border: 1px solid gray;
     border-radius: 8px;
     box-shadow: 0px 2px 5px 0px rgba(34, 60, 80, 0.3);
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 90%;
+  }
 }
